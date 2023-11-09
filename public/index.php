@@ -2,7 +2,7 @@
 
 use Router\Router;
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 $router = new Router($_GET['url']);
 
