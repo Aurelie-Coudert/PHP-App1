@@ -6,11 +6,11 @@ class BlogController {
 
   public function index()
   {
-    echo 'Je suis la homepage';
+    return $this->view('blog.index');
   }
 
   public function show(int $id)
   {
-    echo 'Je suis le post' . $id;
+    return $this->view('blog.show', compact('id'));
   }
 }
