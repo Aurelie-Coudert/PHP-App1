@@ -11,6 +11,6 @@ class BlogController {
 
   public function show(int $id)
   {
-    echo 'Je suis le post' . $id;
+    return $this->view('blog.show', compact('id'));
   }
 }
