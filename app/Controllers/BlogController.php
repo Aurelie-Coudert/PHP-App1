@@ -6,7 +6,7 @@ class BlogController {
 
   public function index()
   {
-    echo 'Je suis la homepage';
+    return $this->view('blog.index');
   }
 
   public function show(int $id)
